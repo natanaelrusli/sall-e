@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app__header {
+  @apply w-full;
+  @apply flex;
+  @apply justify-between;
+  @apply items-center;
+  @apply bg-white;
+  @apply sm:px-8;
+  @apply px-4;
+  @apply py-4;
+  @apply border-b;
+  @apply border-[#e6ebf4];
+
+  &_img {
+    @apply w-28;
+    @apply object-contain;  
+  }
+
+  &_btn {
+    @apply font-inter;
+    @apply font-medium;
+    @apply bg-[#6469ff];
+    @apply text-white;
+    @apply px-4;
+    @apply py-2;
+    @apply rounded-md;
+  }
+}
+
+.app__main {
+  @apply sm:p-8;
+  @apply px-4;
+  @apply py-8;
+  @apply w-full;
+  @apply bg-[#f9fafe];
+  @apply min-h-[calc(100vh-73px)];
+}

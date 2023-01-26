@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form {
+  &__field {
+    @apply flex;
+    @apply items-center;
+    @apply gap-2;
+    @apply mb-2;
+
+    &_input {
+      @apply bg-gray-100;
+      @apply border-green-300;
+      @apply text-gray-900;
+      @apply text-sm;
+      @apply rounded-lg;
+      @apply outline-none;
+      @apply block;
+      @apply w-full;
+      @apply p-3;
+    }
+
+    &_label {
+      @apply block;
+      @apply text-sm;
+      @apply font-medium;
+      @apply text-gray-900;
+    }
+
+    &_btn {
+      @apply py-1;
+      @apply px-2;
+      @apply rounded-[5px];
+    }
+
+    .btn--surprise {
+      @apply text-gray-900;
+      @apply font-semibold;
+      @apply text-xs;
+      @apply bg-[#ECECF1];
+    }
+  }
+}

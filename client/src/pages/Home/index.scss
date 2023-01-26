@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cards {
+  @apply grid;
+  @apply lg:grid-cols-4;
+  @apply sm:grid-cols-3;
+  @apply xs:grid-cols-2;
+  @apply grid-cols-4;
+  @apply gap-4;
+
+  &__text {
+    @apply mt-5;
+    @apply font-bold;
+    @apply text-[#6469ff];
+    @apply text-xl;
+    @apply uppercase;
+  }
+}
+
+.home {
+  @apply max-w-7xl;
+  @apply mx-auto;
+
+  &__header-title {
+    @apply font-extrabold;
+    @apply text-[#222328];
+    @apply text-[32px];
+  }
+
+  &__header-caption {
+    @apply mt-2;
+    @apply text-[#666e75];
+    @apply text-[16px];
+    @apply max-w-[500px];
+  }
+}

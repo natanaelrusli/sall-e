@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.createpost {
+  @apply max-w-7xl;
+  @apply mx-auto;
+
+  &__header-label {
+    @apply font-extrabold;
+    @apply text-[#222328];
+    @apply text-[32px];
+
+    &--caption {
+      @apply mt-2;
+      @apply text-[#666e75];
+      @apply text-[16px];
+      @apply max-w-[500px];
+    }
+  }
+
+  &__form {
+    @apply mt-16;
+    @apply max-w-full;
+
+    &-container {
+      @apply flex;
+      @apply flex-col;
+      @apply gap-5;
+
+      &--img {
+        @apply relative;
+        @apply bg-gray-50;
+        @apply text-gray-900;
+        @apply text-sm;
+        @apply rounded-lg;
+        @apply focus:ring-blue-500;
+        @apply focus:border-blue-500;
+        @apply w-64;
+        @apply p-3;
+        @apply h-64;
+        @apply flex;
+        @apply justify-center;
+        @apply items-center;
+      }
+
+      &--btn {
+        @apply mt-5;
+        @apply flex;
+        @apply gap-5;
+      }
+
+      &--bottom {
+        @apply mt-10;
+      }
+    }
+
+    &-img {
+      @apply w-full;
+      @apply h-full;
+      @apply object-contain;
+
+      &--preview {
+        @apply w-9/12;
+        @apply h-4/6;
+        @apply object-contain;
+        @apply opacity-40;
+      }
+
+      &--loader {
+        @apply absolute;
+        @apply inset-0;
+        @apply z-0;
+        @apply flex;
+        @apply justify-center;
+        @apply items-center;
+        @apply bg-[rgba(0,0,0,0.5)];
+        @apply rounded-lg;
+      }
+    }
+
+    &-btn {
+      @apply text-white;
+      @apply font-medium;
+      @apply rounded-md;
+      @apply text-sm;
+      @apply w-full;
+      @apply sm:w-auto;
+      @apply px-5;
+      @apply py-3;
+      @apply text-center;
+    }
+
+    &-caption {
+      @apply mt-2;
+      @apply text-[#666e75];
+      @apply text-[14px];
+    }
+
+    .btn--green {
+      @apply bg-green-700;
+    }
+
+    .btn--share {
+      @apply bg-[#6469ff];
+      @apply mt-3;
+      @apply text-white;
+      @apply font-medium;
+      @apply rounded-md;
+      @apply text-sm;
+      @apply w-full;
+      @apply sm:w-auto;
+      @apply px-5;
+      @apply py-2.5;
+      @apply text-center;
+    }
+  }
+}
