@@ -1,0 +1,7 @@
+[Application]
+environment="development"
+port=":8080"
+openai="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"
+
+[Database]
+uri = "mongodb://localhost:27017/dalle-clone"
